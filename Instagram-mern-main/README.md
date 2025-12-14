@@ -1,72 +1,183 @@
-﻿# Instagram-mern
-This Instagram clone is made with React, Node, MongoDB .
+📸 Instagram MERN Clone
+
+An Instagram-like social media application built using the MERN Stack.
+This project supports user authentication, profile management, posts, follow/unfollow functionality, and user search.
+
+🚀 Tech Stack
+Frontend
+
+React.js
+
+Redux
+
+Axios
+
+React Router
+
+Material UI
+
+CSS
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Mongoose
+
+JWT Authentication
+
+bcryptjs
+
+Tools & Utilities
+
+Git & GitHub
+
+MongoDB (Local / Atlas)
+
+Nodemon (optional)
+
+✨ Features
+
+User Signup & Login (JWT based)
+
+User Profiles
+
+Follow / Unfollow Users
+
+Create & View Posts
+
+Search Users
+
+Protected Routes
+
+Cookie-based Authentication
+
+Responsive UI
+
+🔧 Prerequisites
+
+Make sure you have the following installed:
+
+Node.js (v16+ recommended)
+
+npm
+
+MongoDB (local or Atlas)
+
+Git
+
+⚙️ Environment Setup
+🔹 Backend Environment Variables
+
+Create a file at:
+
+backend/config/config.env
 
 
-## Prerequisites
-Make sure you have installed all of the following prerequisites on your development machine:
-* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-* Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+Paste the following:
 
+PORT=4000
 
-## Cloning The GitHub Repository
-The recommended way to get this repo clone is to use git to directly clone the repository:
+MONGO_URI=mongodb://127.0.0.1:27017/instagram_clone
 
-```bash
-$ git clone https://github.com/nisabmohd/Instagram-mern.git
-```
+JWT_SECRET=my_jwt_secret_123
+JWT_REFRESH_SECRET=my_jwt_refresh_secret_123
 
-## Environment variables React setup 
-create .env file in frontend/src
-```
-REACT_APP_API_URL=http://localhost:8000
-REACT_APP_GOOGLE_OAUTH_REDIRECT_URL=http://localhost:8000/auth/google/oauth
-REACT_APP_GOOGLE_CLIENT_ID= {google auth client id}
-
-```
-## Environment variables Node setup 
-create .env file in backend
-```
-PORT = {port number}
-Mongo_URI= {your mongo uri}
-JWT_Secret= {jwt secret}
-JWT_Refresh_Secret= {jwt refresh secret}
 CLIENT_URL=http://localhost:3000
-email=userzyx01@xyz.com
-password=1skjsnksdsd
-clientid={google auth cclientid}
-clientsecret={google auth client secret}
-redirect_url=http://localhost:8000/auth/google/oauth
 
-```
+EMAIL=userzyx01@xyz.com
+PASSWORD=1skjsnksdsd
 
+CLIENTID=dummy
+CLIENTSECRET=dummy
+REDIRECT_URL=http://localhost:4000/auth/google/oauth
 
-## Running Your Application
+NODE_ENV=development
 
-open terminal/bash in this repo and enter below commands to start the application
+🔹 Frontend Environment Variables
 
-&#8594; To start the server
-```bash
-$ cd frontend
-$ node server.js
-```
+Create a file at:
 
-&#8594; To start the client app
-```bash
-$ cd client
-$ npm start
-```
+frontend/src/.env
 
 
+Paste the following:
 
-* Your client application should run on port 3000 with the *development* environment configuration, so in your browser just go to [http://localhost:3000](http://localhost:3000)
+REACT_APP_API_URL=http://localhost:4000
+REACT_APP_GOOGLE_OAUTH_REDIRECT_URL=http://localhost:4000/auth/google/oauth
+REACT_APP_GOOGLE_CLIENT_ID=dummy
 
-* Your server application should run on port 8000, so in your browser just go to [http://localhost:8000](http://localhost:3000)
+▶️ How to Run the Project
+🔹 Step 1: Clone the Repository
+git clone https://github.com/Techdarshit/instagram-mini-clone.git
+cd instagram-mini-clone
 
-<br>
+🔹 Step 2: Install Backend Dependencies
+cd backend
+npm install
 
-<img src="./images/login.png">
-<img src="./images/home.png">
-<img src="./images/story.png">
-<img src="./images/chat.png">
-<img src="./images/explore.png">
-<img src="./images/profile.png">
+🔹 Step 3: Start Backend Server
+node server.js
+
+
+Backend will run at:
+
+http://localhost:4000
+
+🔹 Step 4: Install Frontend Dependencies
+
+Open a new terminal:
+
+cd frontend
+npm install
+
+🔹 Step 5: Start Frontend App
+npm start
+
+
+Frontend will run at:
+
+http://localhost:3000
+
+🧪 Testing
+
+Signup a new user
+
+Login
+
+Search users
+
+Follow / unfollow
+
+View profiles & posts
+
+🛑 Known Limitations
+
+Image upload is disabled (AWS removed for local setup)
+
+Google OAuth is not configured
+
+Email functionality is mocked
+
+🧠 Learning Outcomes
+
+Full-stack MERN development
+
+Authentication & authorization
+
+REST API design
+
+Redux state management
+
+Environment-based configuration
+
+Debugging cloned projects
+
+📌 Author
+
+Darshit Punglia
+GitHub: Techdarshit
